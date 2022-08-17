@@ -1,0 +1,276 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.carousel-item {
+    height: 90vh;
+    background: no-repeat scroll center scroll;
+    background-size: cover;
+}
+
+.TheBrownSuites {
+    width: 120px;
+    height: 120px;
+}
+
+.carousel-item::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #000;
+    opacity: 0.3;
+}
+
+.carousel-caption {
+    bottom: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.carousel-caption h5 {
+    font-size: 50px;
+    font-weight: 200px;
+}
+
+.carousel-caption p {
+    font-size: 20px;
+}
+
+.features{
+    padding: 30px 0px;
+}
+
+h1{
+    text-align: center;
+    padding-bottom: 20px;
+    color: burlywood;
+}
+
+.feature-img img{
+    width: 100%;
+    height: 400px;
+}
+
+.price{
+    width: 50px;
+    height: 40px;
+    background: rgb(175, 186, 23);
+    color: black;
+    font-weight: 400;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 o 10px 1px rgba(37, 73, 214, 0.18);
+    position: absolute;
+    left: 0px;
+    bottom: -2px;
+}
+
+.feature-img{
+    position: relative;
+}
+
+.rating {
+    padding: 3px;
+    float: right;
+    background: rgb(175, 186, 23);
+    bottom: -1px;
+    right: 0;
+    position: absolute;
+}
+
+.features .fa {
+    font-size: 20px;
+    color: black;
+}
+
+
+.feature-box {
+    box-shadow: 0 0 10px 1px rgba(37, 73, 214, 0.18);
+    margin-bottom: 20px;
+}
+
+.gallery {
+    padding: 100px 0;
+    background: #efefef;
+}
+
+.gallery-box img {
+    width: 100%;
+    height: 350px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.gallery-box img:hover {
+    transform: scale(1.1)
+}
+
+.gallery-box h4 {
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    text-shadow: -2px 2px 2px #000;
+    transform: translate(-50%, -50%);
+}
+
+.gallery-box {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+
+.banner {
+    height: 80vh;
+    background-image: url("../img/resturant3.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 10%;
+}
+
+.banner-about-us {
+    height: 80vh;
+    background-image: url("../img/pool2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 10%;
+}
+
+
+.banner-highlights {
+    padding: 50px 0;
+    background: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    color: #fff;
+}
+
+.booking-btn {
+    width: 150px;
+    padding: 4px 0;
+    outline: none !important;
+    border: 2px solid black;
+    border-radius: 50px;
+    background: transparent;
+    color: #fff;
+    margin-top: 30px;
+}
+
+.users-feedback {
+    padding: 5% 0;
+}
+
+.users-review {
+    text-align: center;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 100, 0.2);
+    padding-bottom: 20px;
+}
+
+.users-review p {
+    padding: 10px 10px 10px 10px;
+}
+
+.users-feedback img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: relative;
+    margin: -20px 0 20px 40%;
+}
+
+.footer {
+    padding: -2000px;
+    background-image: linear-gradient(#cdd5d8, #c39ce2);
+
+}
+
+.footer-logo {
+    width: 150px;
+    margin-top: 10px;
+    margin-bottom: 2px;
+    margin-right: 50px;
+}
+
+footer h4 {
+    text-align: center;
+    margin-top: 10px;
+    /* margin-bottom: 2px; */
+    margin-left: 500px;
+}
+
+.footer p {
+    text-align: center;
+    text-align: justify;
+    padding: -20px;
+    margin-right: 100px;
+}
+.gotohell{
+    margin-bottom: 200px;
+}
+
+
+@media (min-width: 900px) and (max-width : 2200px) {
+/* //This should work for Normal desktops(15 to 18 inch) only. */
+
+        /* Map */
+    .mapouter {
+        /* width: 100%; */
+        /* margin-left: 200px; */
+    }
+}
+
+@media  (max-width : 700px) {
+    /* //This should work for Normal desktops(15 to 18 inch) only. */
+        .carousel-item {
+            height: 100%;
+            background: no-repeat scroll center scroll;
+            background-size: cover;
+        }
+      
+        .feature-img img{
+            height: 200px;
+        }
+
+    
+    }
+    @media  (max-width : 50px) {
+        /* //This should work for Normal desktops(15 to 18 inch) only. */
+    .About-us {
+    margin-left: 50%;
+    /* width: 1000px; */
+    margin-top: 500px;
+    margin-bottom: 500px;
+    transform: translateX(-50%);
+    /* text-align: justify; */
+}
+    }
+.trial {
+    margin: 100px;
+    margin-top: 20px;
+
+}
+
+.text-center {
+    margin: -70px;
+    margin-left: -950px;
+}
+    
+.booking {
+    padding: 20px;
+    margin-left: 80px;
+}
+
+
+
